@@ -42,8 +42,7 @@ export default function BasicTable({ products }) {
             .map((product) => (
               <TableRow
                 key={product.product_id}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
                 <TableCell component="th" scope="product">
                   {product.product_id}
                 </TableCell>
@@ -55,8 +54,7 @@ export default function BasicTable({ products }) {
                 <TableCell align="center">
                   <a
                     className="underline text-blue-500 font-semibold"
-                    href={`${product.link}`}
-                  >
+                    href={`${product.link}`}>
                     Click
                   </a>
                 </TableCell>
