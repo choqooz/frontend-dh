@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import PersonalCard from "./PersonalCard";
 import { Button } from "@mui/material";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export function Home({ products, users, carts }) {
   return (
     <>
+      <Header />
       <div className="flex items-center justify-center gap-5 pt-5 pb-5">
         <PersonalCard
           title="Productos"
@@ -61,6 +64,7 @@ export function Home({ products, users, carts }) {
           </Button>
         </div>
       </Link>
+      <Footer />
     </>
   );
 }
