@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import "./index.css";
 import productService from "./services/products";
 import cartsService from "./services/carts";
 import { getUsers } from "./services/users";
