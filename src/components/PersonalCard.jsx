@@ -2,14 +2,14 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
-import { blueGrey } from "@mui/material/colors";
+import { blueGrey, red, yellow } from "@mui/material/colors";
 
 
 function PersonalCard({ title, count, description }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345}}>
       <CardActionArea>
-        <CardContent>
+        <CardContent color="warning">
           <Typography gutterBottom variant="h5" component="div">
             {title}
           </Typography>
@@ -22,7 +22,7 @@ function PersonalCard({ title, count, description }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color= "warning">
           Share
         </Button>
       </CardActions>
